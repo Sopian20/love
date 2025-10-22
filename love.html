@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untuk Pacarku - Cinta Abadi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef, #ffecd2);
+            color: #333;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            color: #e91e63;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: fadeIn 2s ease-in;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .heart {
+            font-size: 5em;
+            color: #e91e63;
+            animation: pulse 2s infinite;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .message {
+            background: rgba(255,255,255,0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Musik otomatis tanpa tombol play -->
+    <audio autoplay loop>
+        <source src="https://vulnerable-apricot-swwhhgncmq.edgeone.app/9f97496db7d1f1032232649805d3a5c6.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <div class="container">
+        <h1>Untuk Pacarku yang Tercinta</h1>
+        <div class="heart">❤️</div>
+        <p>Kamu adalah cahaya dalam hidupku, sumber kebahagiaanku. Setiap hari bersamamu adalah petualangan yang indah.</p>
+        
+        <div class="gallery">
+            <!-- Ganti src dengan URL gambar romantis Anda -->
+            <img src="https://i.ibb.co.com/TM0XXYF3/MYXJ-20251011184235305-save.jpg">
+            <img src="https://i.ibb.co.com/zVgXKBgX/MYXJ-20251006054850288-save.jpg">  
+        <div class="message">
+            <h2>Pesan Khusus</h2>
+            <p>Dari lubuk hati yang paling dalam, aku ingin mengatakan bahwa aku mencintaimu lebih dari apa pun. Kamu membuat dunia ini lebih indah. Aku berjanji akan selalu ada untukmu, dalam suka dan duka.</p>
+            <p>Terima kasih telah menjadi bagian dari hidupku. I love you! 💕</p>
+        </div>
+    </div>
+
+    <script>
+        // Animasi sederhana untuk hati
+        const heart = document.querySelector('.heart');
+        heart.addEventListener('click', () => {
+            heart.style.animation = 'pulse 0.5s infinite';
+            setTimeout(() => {
+                heart.style.animation = 'pulse 2s infinite';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
